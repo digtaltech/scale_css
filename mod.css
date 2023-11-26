@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+
+}
+
+.calendar {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12.0px;
+  border: #757575 0.16000000000000003rem dashed;
+}
+
+.preview_calendar {
+  /* background-color: #2C7BE5; */
+  background-image: url(img/background.png);
+  background-size: 100% 100%;
+  overflow: auto;
+  /* width: 270.40000000000003px;
+  height: 382.0px; */
+
+  width: 118.80000000000001mm;
+  height: 168.0mm;
+
+  /* width: 1403.2px;
+  height: 1984.4px; */
+}
+
+.month {
+  width: 100%;
+  height: 4.800000000000001rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+  text-align: center;
+  text-shadow: 0 0.12rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 5.6000000000000005px;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 5.6000000000000005px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08000000000000002rem;
+  margin-bottom: 0.4rem;
+}
+
+.month p {
+  font-size: 5.6000000000000005px;
+}
+
+
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4.0px;
+}
+
+.weekdays>div, .days>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2px;
+  border-radius: 1.6px;
+}
+
+.weekdays>div {
+  font-size: 8.8px;
+
+}
+
+.days>div {
+  font-size: 14.4px;
+  font-weight: 500;
+}
+
+
+.days-holiday {
+  color: #E63757;
+  font-weight: bold;
+}
+
+/* .days div:hover:not(.today) {
+    background-color: #262626;
+    border: 0.08000000000000002rem solid #777;
+    cursor: pointer;
+  } */
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+/* .today {
+    background-color: #167e56;
+  } */
+
+
+.image_prev {
+  height: 50%;
+  /* height: 84.0mm; */
+  overflow: hidden;
+  /* background-color: #909090a1; */
+  position: relative;
+  padding: 1.4000000000000001rem;
+}
+
+.img_prev_blank {
+  width: 100%;
+  height: 100%;
+  /* Установите высоту и ширину на 100% */
+  object-fit: cover;
+  /* Используйте object-fit: cover для сохранения пропорций */
+  border-radius: 12.0px;
+  border: #757575 0.16000000000000003rem dashed;
+  cursor: pointer;
+}
+
+
+.calendar_prev {
+  width: 100%;
+  /* background-color: #167e568f; */
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  padding: 1.4000000000000001rem;
+}
+
+.preview_data {
+  margin: 1.1199999999999999rem;
+  margin-bottom: 0.32000000000000006rem;
+  margin-top: 0.6000000000000001rem;
+  /* padding-top: 0.4rem; */
+  color: #252A34;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pd1 {
+  font-size: 9.600000000000001px !important;
+  font-weight: 500;
+  margin-bottom: 0;
+  /* text-transform: uppercase; */
+}
+
+
+.card-holiday {
+  width: 100%;
+  font-size: 4.4px;
+  /* background-color: #2C7BE5; */
+  border-radius: 1.6px;
+  padding-top: 2.0px;
+  padding-bottom: 8.0px;
+  padding-left: 2.0px;
+  padding-right: 2.0px;
+  margin-top: 2.0px;
+}
+
+.card-holiday p {
+  color: #252A34;
+  margin-bottom: 0.12rem !important;
+  font-size: 9.600000000000001px;
+  font-weight: 400 !important;
+  margin-left: 0.6000000000000001rem;
+  text-decoration: none;
+}
+
+.card-holiday-child {
+  margin-top: -2.4000000000000004px;
+  margin-bottom: -4.800000000000001px;
+  margin-left: 6.4px;
+}
+
+.line_style {
+  margin: 0.32000000000000006rem;
+  margin-left: 0.6000000000000001rem;
+  margin-right: 0.6000000000000001rem;
+}
+
+.holiday_list {
+  /* margin: -1.2000000000000002px; */
+}
